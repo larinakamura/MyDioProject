@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10001</projectId>
+    <projectKey>PDC</projectKey>
+    <exportDate>2023-01-25 03:29:06 UTC</exportDate>
+    <folders>
+        <folder fullPath="Carrinho de compra" index="0"/>
+    </folders>
+    <testCases>
+        <testCase id="78454319" key="PDC-T1">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Larissa Nakamura</createdBy>
+            <createdOn>2023-01-18 22:21:31 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Carrinho de compra]]></folder>
+            <issues/>
+            <labels>
+                <label><![CDATA[Sprint1]]></label>
+            </labels>
+            <name><![CDATA[Cliente deseja visualizar, adicionar, remover produto no carrinho, e retornar a página de compras]]></name>
+            <objective><![CDATA[Verificar a funcionalidade de adicionar, visualizar, remover, definir a quantidade num&eacute;rica do produto que deseja comprar no carrinho de compras. Tamb&eacute;m retornar para p&aacute;gina principal e visualizar o bot&atilde;o de forma de pagamento.]]></objective>
+            <owner>63b83eee4bc858b303cfbb23</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[<p><span style="font-size: 14.0px;font-family: &quot;Segoe UI&quot; , sans-serif;color: rgb(23,43,77);">Cliente ap&oacute;s acessar o site&nbsp;</span></p>]]></description>
+                        <expectedResult><![CDATA[<p><span style="font-size: 14.0px;font-family: &quot;Segoe UI&quot; , sans-serif;color: rgb(23,43,77);">Cliente deve visualizar o site com a tela de login</span></p>]]></expectedResult>
+                        <testData><![CDATA[<p><span style="font-size: 14.0px;font-family: &quot;Segoe UI&quot; , sans-serif;color: rgb(23,43,77);">https://www.saucedemo com. /</span></p>]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[<p><span style="font-size: 14.0px;font-family: &quot;Segoe UI&quot; , sans-serif;color: rgb(23,43,77);">Entrar atrav&eacute;s de seu login&nbsp;</span></p>]]></description>
+                        <expectedResult><![CDATA[<p><span style="font-size: 14.0px;font-family: &quot;Segoe UI&quot; , sans-serif;color: rgb(23,43,77);">Cliente deve acessar o site atrav&eacute;s do login e entrar na p&aacute;gina de compra</span></p>]]></expectedResult>
+                        <testData><![CDATA[<p><span style="font-size: 14.0px;font-family: &quot;Segoe UI&quot; , sans-serif;color: rgb(23,43,77);">usu&aacute;rio: standard_user / senha: secret_sauce</span></p>]]></testData>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[<p><span style="font-size: 14.0px;font-family: &quot;Segoe UI&quot; , sans-serif;color: rgb(23,43,77);">Escolher os produtos que deseja comprar&nbsp;</span></p>]]></description>
+                        <expectedResult><![CDATA[<p><span style="font-size: 14.0px;font-family: &quot;Segoe UI&quot; , sans-serif;color: rgb(23,43,77);">Cliente deve conseguir adicionar o produto que deseja comprar</span></p>]]></expectedResult>
+                        <testData><![CDATA[<p><span style="font-size: 14.0px;font-family: &quot;Segoe UI&quot; , sans-serif;color: rgb(23,43,77);">escolher o produto &ldquo;sauce Labs Backpack&rdquo;</span></p>]]></testData>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[<p><span style="font-size: 14.0px;font-family: &quot;Segoe UI&quot; , sans-serif;color: rgb(23,43,77);">Verificar&aacute; no carrinho de compras&nbsp;</span></p>]]></description>
+                        <expectedResult><![CDATA[<p><span style="font-size: 14.0px;font-family: &quot;Segoe UI&quot; , sans-serif;color: rgb(23,43,77);">Cliente deve conseguir acessar o carrinho de compras&nbsp;</span></p>]]></expectedResult>
+                        <testData><![CDATA[<p><span style="font-size: 14.0px;font-family: &quot;Segoe UI&quot; , sans-serif;color: rgb(23,43,77);">&nbsp;Atrav&eacute;s do clique no &iacute;cone &ldquo;carrinho de compras&rdquo;.</span></p>]]></testData>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[<p><span style="font-size: 14.0px;font-family: &quot;Segoe UI&quot; , sans-serif;color: rgb(23,43,77);">Visualizar o produto adicionado</span></p>]]></description>
+                        <expectedResult><![CDATA[<p><span style="font-size: 14.0px;font-family: &quot;Segoe UI&quot; , sans-serif;color: rgb(23,43,77);">&ldquo;Sauce Labs Backpack</span></p><p><span style="font-size: 14.0px;font-family: &quot;Segoe UI&quot; , sans-serif;color: rgb(23,43,77);">Carry.allThe Things() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection</span></p><p><span style="font-size: 14.0px;font-family: &quot;Segoe UI&quot; , sans-serif;color: rgb(23,43,77);">$29.99&rdquo;</span></p>]]></expectedResult>
+                        <testData><![CDATA[]]></testData>
+                    </step>
+                    <step index="5">
+                        <customFields/>
+                        <description><![CDATA[<p><span style="font-size: 14.0px;font-family: &quot;Segoe UI&quot; , sans-serif;color: rgb(23,43,77);">Aumentar ou diminuir a quantidade de produtos que deseja</span></p>]]></description>
+                        <expectedResult><![CDATA[<p><span style="font-size: 14.0px;font-family: &quot;Segoe UI&quot; , sans-serif;color: rgb(23,43,77);">Cliente poder&aacute; definir a quantidade num&eacute;rica que deseja comprar&nbsp;</span></p>]]></expectedResult>
+                        <testData><![CDATA[<span style="font-size: 14.0px;line-height: 107.0%;font-family: &quot;Segoe UI&quot; , sans-serif;color: rgb(23,43,77);">&ndash; digitar dentro do quadrado n&uacute;meros de &gt; ou = a 1 que se localiza ao lado esquerdo do produto o n&uacute;mero da quantidade que deseja comprar</span>]]></testData>
+                    </step>
+                    <step index="6">
+                        <customFields/>
+                        <description><![CDATA[<p><span style="font-size: 14.0px;font-family: &quot;Segoe UI&quot; , sans-serif;color: rgb(23,43,77);">Remover os produtos&nbsp;</span></p>]]></description>
+                        <expectedResult><![CDATA[<p><span style="font-size: 14.0px;font-family: &quot;Segoe UI&quot; , sans-serif;color: rgb(23,43,77);">Cliente poder&aacute; remover o produto do carrinho de compras</span></p>]]></expectedResult>
+                        <testData><![CDATA[<p><span style="font-size: 14.0px;font-family: &quot;Segoe UI&quot; , sans-serif;color: rgb(23,43,77);">Clicar no bot&atilde;o &ldquo;REMOVER&rdquo; que se localiza ao lado direito do produto</span></p>]]></testData>
+                    </step>
+                    <step index="7">
+                        <customFields/>
+                        <description><![CDATA[<p><span style="font-size: 15.0px;color: rgb(23,43,77);">Retornar a p&aacute;gina principal de compras</span></p>]]></description>
+                        <expectedResult><![CDATA[<p><span style="font-size: 14.0px;font-family: &quot;Segoe UI&quot; , sans-serif;color: rgb(23,43,77);">Cliente retornar&aacute; a p&aacute;gina principal de compras&nbsp;</span></p>]]></expectedResult>
+                        <testData><![CDATA[<p><span style="font-size: 14.0px;font-family: &quot;Segoe UI&quot; , sans-serif;color: rgb(23,43,77);">Clicar no bot&atilde;o &ldquo;&lt;--CONTINUAR COMPRAS&rdquo; que se localiza na parte inferior da p&aacute;gina de compras do lado esquerdo</span></p>]]></testData>
+                    </step>
+                    <step index="8">
+                        <customFields/>
+                        <description><![CDATA[<p><span style="font-size: 14.0px;font-family: &quot;Segoe UI&quot; , sans-serif;color: rgb(23,43,77);">Ou visualizar o bot&atilde;o de &ldquo;FORMA DE PAGAMENTO&nbsp;</span><span style="font-size: 14.0px;font-family: Wingdings;color: rgb(23,43,77);">&agrave;</span><span style="font-size: 14.0px;font-family: &quot;Segoe UI&quot; , sans-serif;color: rgb(23,43,77);">&rdquo; para finalizar a compra&nbsp;</span></p>]]></description>
+                        <expectedResult><![CDATA[<p><span style="font-size: 14.0px;font-family: &quot;Segoe UI&quot; , sans-serif;color: rgb(23,43,77);">Visualizar o bot&atilde;o para forma de pagamento</span></p>]]></expectedResult>
+                        <testData><![CDATA[<p><span style="font-size: 14.0px;font-family: &quot;Segoe UI&quot; , sans-serif;color: rgb(23,43,77);">Que se localiza na parte inferior na p&aacute;gina do carrinho de compras do lado direito</span></p>]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="78692763" key="PDC-T3">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Larissa Nakamura</createdBy>
+            <createdOn>2023-01-25 01:27:53 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Carrinho de compra]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Ciclo 1.2 BDD Cliente deseja visualizar, adicionar, remover produto no carrinho, e retornar a página de compras.]]></name>
+            <objective><![CDATA[Verificar a funcionalidade de adicionar, visualizar, remover, definir a quantidade num&eacute;rica do produto que deseja comprar no carrinho de compras. Tamb&eacute;m retornar para p&aacute;gina principal e visualizar o bot&atilde;o de forma de pagamento.]]></objective>
+            <owner>63b83eee4bc858b303cfbb23</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given que o cliente possa acessar o carrinho de compras
+When que eu esteja na página principal de compras
+When eu clicar no ícone “carrinho de compras”
+Then o sistema direcionará para a página do carrinho de compras
+And eu terei pelo menos um item adicionado 
+And eu poderei editar a quantidade numeral dos produtos que quero
+And eu poderei remover o produto(s) que eu quero clicando no botão “REMOVER”
+And visualizarei o botão “FINALIZAR COMPRAS”
+And eu serei direcionado a página de compras novamente ao clicar no botão “CONTINUAR COMPRAS”]]></details>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>

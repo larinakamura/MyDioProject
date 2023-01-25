@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10001</projectId>
+    <projectKey>PDC</projectKey>
+    <exportDate>2023-01-25 03:29:52 UTC</exportDate>
+    <folders>
+        <folder fullPath="Forma de pagamento" index="1"/>
+    </folders>
+    <testCases>
+        <testCase id="78458746" key="PDC-T2">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Larissa Nakamura</createdBy>
+            <createdOn>2023-01-18 22:51:39 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Forma de pagamento]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Cliente deseja escolher a forma de pagamento, visualizar o produto que está sendo comprado e o campo para acrescentar um cupom de desconto]]></name>
+            <objective><![CDATA[Testar a funcionalidade de escolha da Forma de Pagamento do cliente, bem como realizar a conex&atilde;o dessa escolha com o banco.<br />Visualizar o produto e a quantidade num&eacute;rica do mesmo que est&aacute; sendo comprado.<br />Visualizar o campo para adicionar um cupom de desconto <br />Visualizar o bot&atilde;o para retornar a p&aacute;gina principal de compras.]]></objective>
+            <owner>63b83eee4bc858b303cfbb23</owner>
+            <precondition><![CDATA[Adicionar o produto na lista de compras]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[<p><span style="font-size: 15.0px;color: black;">Escolher o produto e quantidade que ir&aacute; comprar&nbsp;</span></p>]]></description>
+                        <expectedResult><![CDATA[<p><span style="font-size: 16.0px;font-family: &quot;Times New Roman&quot; , serif;color: black;">1x &ldquo;sauce Labs Backpack&rdquo;</span></p>]]></expectedResult>
+                        <testData><![CDATA[]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[<p><span style="font-size: 16.0px;font-family: &quot;Times New Roman&quot; , serif;color: black;">Ser direcionado para p&aacute;gina de pagamento</span></p>]]></description>
+                        <expectedResult><![CDATA[<p><span style="font-size: 16.0px;font-family: &quot;Times New Roman&quot; , serif;color: black;">Visualizar a p&aacute;gina com as formas de pagamento</span></p>]]></expectedResult>
+                        <testData><![CDATA[<p><span style="font-size: 16.0px;font-family: &quot;Times New Roman&quot; , serif;color: black;">Clicar no bot&atilde;o que se localiza na parte inferior na p&aacute;gina do carrinho de compras do lado direito &ldquo;FORMA DE PAGAMENTO --&gt;&rdquo;</span></p>]]></testData>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[<p><span style="font-size: 15.0px;color: black;">Visualizar as op&ccedil;&otilde;es de pagamento oferecidas Boleto, PIX, Cr&eacute;dito e D&eacute;bito</span></p>]]></description>
+                        <expectedResult><![CDATA[<p><span style="font-size: 16.0px;font-family: &quot;Times New Roman&quot; , serif;color: black;">Cliente ter&aacute; a possibilidade de escolher uma das op&ccedil;&otilde;es de pagamento</span></p>]]></expectedResult>
+                        <testData><![CDATA[<p><span style="font-size: 16.0px;font-family: &quot;Times New Roman&quot; , serif;color: black;">Uma coluna do lado esquerdo da tela, em que cada quadrado um embaixo do outro dessa coluna ser&aacute; um bot&atilde;o com a op&ccedil;&atilde;o oferecida&nbsp;</span></p><table style="width: 47.0%;border-collapse: collapse;"><tbody><tr><td style="width: 106.1pt;border: 1.0pt solid windowtext;padding: 0.0cm 5.4pt;vertical-align: top;text-align: center;"><p><span style="font-size: 16.0px;font-family: &quot;Times New Roman&quot; , serif;">BOLETO</span></p></td></tr><tr><td style="width: 106.1pt;border-right: 1.0pt solid windowtext;border-bottom: 1.0pt solid windowtext;border-left: 1.0pt solid windowtext;border-top: none;padding: 0.0cm 5.4pt;vertical-align: top;text-align: center;"><p><span style="font-size: 16.0px;font-family: &quot;Times New Roman&quot; , serif;">PIX</span></p></td></tr><tr><td style="width: 106.1pt;border-right: 1.0pt solid windowtext;border-bottom: 1.0pt solid windowtext;border-left: 1.0pt solid windowtext;border-top: none;padding: 0.0cm 5.4pt;vertical-align: top;text-align: center;"><p><span style="font-size: 16.0px;font-family: &quot;Times New Roman&quot; , serif;">CR&Eacute;DITO</span></p></td></tr><tr><td style="width: 106.1pt;border-right: 1.0pt solid windowtext;border-bottom: 1.0pt solid windowtext;border-left: 1.0pt solid windowtext;border-top: none;padding: 0.0cm 5.4pt;height: 13.9pt;vertical-align: top;text-align: center;"><p><span style="font-size: 16.0px;font-family: &quot;Times New Roman&quot; , serif;">D&Eacute;BITO</span></p></td></tr></tbody></table>]]></testData>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[<p><span style="font-size: 16.0px;font-family: &quot;Times New Roman&quot; , serif;color: black;">Escolha da forma de pagamento Boleto</span></p>]]></description>
+                        <expectedResult><![CDATA[<p><span style="font-size: 16.0px;font-family: &quot;Times New Roman&quot; , serif;color: black;">Ser&aacute; gerado um boleto com as informa&ccedil;&otilde;es da compra</span></p>]]></expectedResult>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[<p><span style="font-size: 16.0px;font-family: &quot;Times New Roman&quot; , serif;color: black;">Escolha da forma de pagamento PIX&nbsp;</span></p>]]></description>
+                        <expectedResult><![CDATA[<p><span style="font-size: 16.0px;font-family: &quot;Times New Roman&quot; , serif;color: black;">Cliente ser&aacute; direcionado a uma p&aacute;gina com o QR Code e o link</span></p>]]></expectedResult>
+                    </step>
+                    <step index="5">
+                        <customFields/>
+                        <description><![CDATA[<p><span style="font-size: 16.0px;font-family: &quot;Times New Roman&quot; , serif;color: black;">Escolha da forma de pagamento Cr&eacute;dito&nbsp;</span></p>]]></description>
+                        <expectedResult><![CDATA[<p><span style="font-size: 16.0px;font-family: &quot;Times New Roman&quot; , serif;color: black;">O cliente ser&aacute; direcionado a p&aacute;gina em que ir&aacute; preencher seus dados do cart&atilde;o e a escolha da quantidade de parcelas que deseja</span></p>]]></expectedResult>
+                    </step>
+                    <step index="6">
+                        <customFields/>
+                        <description><![CDATA[<p><span style="font-size: 16.0px;font-family: &quot;Times New Roman&quot; , serif;color: black;">Escolha da forma de pagamento D&eacute;bito&nbsp;</span></p>]]></description>
+                        <expectedResult><![CDATA[<p><span style="font-size: 16.0px;font-family: &quot;Times New Roman&quot; , serif;color: black;">O cliente ser&aacute; direcionado para preencher os seus dados do cart&atilde;o</span></p>]]></expectedResult>
+                    </step>
+                    <step index="7">
+                        <customFields/>
+                        <description><![CDATA[<p><span style="font-size: 16.0px;font-family: &quot;Times New Roman&quot; , serif;color: black;">Visualizar o produto, a quantidade num&eacute;rica do mesmo e campo para adicionar cupom de desconto</span></p>]]></description>
+                        <expectedResult><![CDATA[<p><span style="font-size: 16.0px;font-family: &quot;Times New Roman&quot; , serif;color: black;">Visualizar o produto que deseja comprar e inserir cupom de desconto caso tenha um</span></p>]]></expectedResult>
+                        <testData><![CDATA[<span style="font-size: 15.0px;line-height: 107.0%;font-family: Calibri , sans-serif;">Um quadrado no lado esquerdo com o t&iacute;tulo &ldquo;PRODUTO&rdquo; que ter&aacute; o seguinte conte&uacute;do &ndash; o produto que foi escolhido e a quantidade: 1x &ldquo;sauce Labs Backpack&rdquo; &ndash; abaixo visualizar&aacute; a op&ccedil;&atilde;o de acrescentar um cupom de desconto em que haver&aacute; um espa&ccedil;o para o preenchimento desse cupom: &ldquo;CUPOM DE DESCONTO ________&rdquo; &ndash; e um &iacute;cone &ldquo;INSERIR&rdquo;&nbsp;<span style="font-size: 15.0px;line-height: 107.0%;font-family: Calibri , sans-serif;">para validar o cupom<img src="https://smartbear-tm4j-prod-us-west-2-attachment-rich-text.s3.us-west-2.amazonaws.com/embedded-ce6a235455038bd43a9ea79e459e200ca6ffb67e20b8cbb352e9c2b472ba2331-1674615276721-1674615276721.png" style="width: 300.0px;" class="fr-fic fr-fil fr-dib" /></span></span>]]></testData>
+                    </step>
+                    <step index="8">
+                        <customFields/>
+                        <description><![CDATA[<p><span style="font-size: 15.0px;color: black;">visualizar o bot&atilde;o para retornar a p&aacute;gina principal de compras&nbsp;</span></p>]]></description>
+                        <expectedResult><![CDATA[<p><span style="font-size: 16.0px;font-family: &quot;Times New Roman&quot; , serif;color: black;">Visualizar o bot&atilde;o para retornar as compras</span></p>]]></expectedResult>
+                        <testData><![CDATA[<p><span style="font-size: 16.0px;font-family: &quot;Times New Roman&quot; , serif;color: black;">bot&atilde;o &ldquo;&lt;--CONTINUAR COMPRAS&rdquo; que se localiza na parte inferior da p&aacute;gina de compras do lado esquerdo</span></p>]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="78693108" key="PDC-T4">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Larissa Nakamura</createdBy>
+            <createdOn>2023-01-25 02:03:19 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Forma de pagamento]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Ciclo 2.2 BDD - Cliente deseja escolher a forma de pagamento, visualizar o produto que está sendo comprado e o campo para acrescentar um cupom de desconto]]></name>
+            <objective><![CDATA[Testar a funcionalidade de escolha da Forma de Pagamento do cliente, bem como realizar a conex&atilde;o dessa escolha com o banco.<br />Visualizar o produto e a quantidade num&eacute;rica do mesmo que est&aacute; sendo comprado.<br />Visualizar o campo para adicionar um cupom de desconto<br />Visualizar o bot&atilde;o para retornar a p&aacute;gina principal de compras. ]]></objective>
+            <owner>63b83eee4bc858b303cfbb23</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given Acessar a página de Forma de Pagamento
+When eu esteja no carrinho de compras
+When eu clicar no botão “FORMA DE PAGAMENTO”
+Then o sistema direcionará para a página da forma de pagamento
+And eu poderei ver o produto que quero comprar 
+And eu poderei ver o campo CUPOM DE DESCONTO 
+And eu terei as opções da forma de pagamento
+And eu poderei escolher BOLETO será gerado um boleto
+And eu poderei escolher PIX e serei direcionado para a página do QR Code e o link
+And eu poderei escolher Crédito e serei direcionado a página para preencher meus dados do cartão e escolha do parcelamento
+And eu poderei escolher Débito e serei direcionado a página para preencher meus dados do cartão]]></details>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
